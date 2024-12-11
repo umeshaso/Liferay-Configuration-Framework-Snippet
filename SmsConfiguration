@@ -11,7 +11,7 @@ import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClass
 	)
 
 @OCD(
-		id = "com.sbi.common.config.SmsConfiguration",
+		id = "com.common.config.SmsConfiguration",
 		localization = "content/Language", 
 		name = "SMS Configuration"
 	)
@@ -24,7 +24,7 @@ public interface SmsConfiguration {
   @AD(required = false, name = "SMS Port", deflt = "9445", type = Meta.Type.String)
   String smsport();
   
-  @AD(required = false, name = "Sender ID", deflt = "SBICWS", type = Meta.Type.String)
+  @AD(required = false, name = "Sender ID", deflt = "CWS", type = Meta.Type.String)
   String senderid();
   
   @AD(required = false, name = "User Name", deflt = "itfoapiinf", type = Meta.Type.String)
