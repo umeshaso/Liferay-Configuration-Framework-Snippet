@@ -1,0 +1,1 @@
+NOTE: When you register a configuration interface, a UI is auto-generated for it in System Settings → Platform → Third Party. That’s the default location; read the next section to learn how to move it somewhere more intuitive.
