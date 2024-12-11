@@ -1,0 +1,45 @@
+package config.test.portlet.config;
+
+import aQute.bnd.annotation.metatype.Meta;
+import aQute.bnd.annotation.metatype.Meta.AD;
+import aQute.bnd.annotation.metatype.Meta.OCD;
+import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClassDefinition;
+
+@ExtendedObjectClassDefinition(
+		category = "OTHER",
+		scope = ExtendedObjectClassDefinition.Scope.SYSTEM
+	)
+
+@OCD(
+		id = "com.sbi.common.config.SmsConfiguration",
+		localization = "content/Language", 
+		name = "SMS Configuration"
+	)
+
+public interface SmsConfiguration {
+	
+  @AD(required = false, name = "SMS Host", deflt = "smsapipprod.co.in", type = Meta.Type.String)
+  String smshost();
+  
+  @AD(required = false, name = "SMS Port", deflt = "9445", type = Meta.Type.String)
+  String smsport();
+  
+  @AD(required = false, name = "Sender ID", deflt = "SBICWS", type = Meta.Type.String)
+  String senderid();
+  
+  @AD(required = false, name = "User Name", deflt = "itfoapiinf", type = Meta.Type.String)
+  String username();
+  
+  @AD(required = false, name = "Password", deflt = "itfoapiinf1", type = Meta.Type.Password)
+  String password();
+  
+  @AD(required = false, name = "URL", deflt = "/bmg/sms/itfoapiinf", type = Meta.Type.String)
+  String url();
+  
+  @AD(required = false, name = "International Flag", deflt = "0", type = Meta.Type.Integer)
+  String internationalflag();
+  
+  @AD(required = false, name = "Protocol", deflt = "https", type = Meta.Type.String)
+  String smsprotocol();
+  
+}
