@@ -1,0 +1,7 @@
+Bundle-Name: config-test-portlet
+Bundle-SymbolicName: config.test.portlet
+Bundle-Version: 1.0.0
+Export-Package: \
+	config.test.portlet.constants,\
+	config.test.portlet.config	
+-metatype: *
